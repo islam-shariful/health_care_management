@@ -1,0 +1,17 @@
+body{
+	background-color:#45f7bc;
+	border: 5px solid #f1f1f1;
+	padding-left: 500px;
+	padding-top: 200px;
+	padding-bottom: 330px;
+}
+/* Back */
+.back{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+
+  position: absolute;
+  left: 1310px;
+  top: 585px;
+}

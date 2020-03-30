@@ -1,0 +1,151 @@
+body {
+	background-color:#45f7bc;
+	border: 5px solid #f1f1f1;
+	padding-left: 500px;
+	padding-top: 200px;
+	padding-bottom: 1100px;
+}
+
+
+/* Back Icon */
+.back {
+	width:30px;
+	height: 30px;
+	position: absolute;
+	left: 20px;
+	top: 1270px;
+}
+/*'''''''''''''''*/
+.doctorimagetop {
+	background: white;
+	position: absolute;
+	left:680px;
+	top:400px;
+
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left:30px;
+	padding-right:30px;
+	padding-bottom:90px;
+	padding-top: 30px;
+	border:5px solid white;
+	border-radius:5px;
+	vertical-align:center;
+}
+.doctorimageleft {
+	background: white;
+	position: absolute;
+	left:200px;
+	top:950px;
+
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:60px;
+	padding-top: 10px;
+	border:5px solid white;
+	border-radius:5px;
+	vertical-align:center;
+}
+.doctormageleftmiddle {
+	background: white;
+	position: absolute;
+	left:520px;
+	top:950px;
+
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:60px;
+	padding-top: 10px;
+	border:5px solid white;
+	border-radius:5px;
+	vertical-align:center;
+}
+.doctormagerightmiddle {
+	background: white;
+	position: absolute;
+	left:840px;
+	top:950px;
+
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:60px;
+	padding-top: 10px;
+	border:5px solid white;
+	border-radius:5px;
+	vertical-align:center;
+}
+.doctorimageright {
+	background: white;
+	position: absolute;
+	left:1150px;
+	top:950px;
+
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:60px;
+	padding-top: 10px;
+	border:5px solid white;
+	border-radius:5px;
+	vertical-align:center;
+}
+.doctorimage {
+	width:250px;
+	height:250px;
+}
+/*............................*/
+/*'''''''''''''''''''''''''''*/
+/* Password Change Icon */
+.ppi {
+	width:30px;
+	height: 30px;
+	position: absolute;
+	left: 50px;
+	top: 30px;
+}
+/* Password Change Icon */
+.passwordChange {
+	width:30px;
+	height: 30px;
+	position: absolute;
+	left: 150px;
+	top: 30px;
+}
+/* Make Appointment Icon */
+.makeappoitment {
+	width:35px;
+	height: 35px;
+	position: absolute;
+	left: 250px;
+	top: 30px;
+}
+/* Make Appointment Icon */
+.viewicon {
+	width:45px;
+	height: 45px;
+	position: absolute;
+	left: 350px;
+	top: 25px;
+}
+/* Search Doctor Icon */
+.searchicon {
+	width:45px;
+	height: 45px;
+	position: absolute;
+	left: 450px;
+	top: 25px;
+}
+
+/*.................*/

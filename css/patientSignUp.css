@@ -1,0 +1,35 @@
+body{
+	background-color:#45f7bc;
+	border: 5px solid #f1f1f1;
+	padding-left: 500px;
+	padding-top: 200px;
+	padding-bottom: 405px;
+}
+/* Back */
+.back{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+
+  position: absolute;
+  left: 1305px;
+  top: 585px;
+}
+
+/* Patient Registration */
+.register{
+	/* text-align: justify; */
+	position: absolute;
+  	left: 20px;
+  	top: 50px;
+}
+/* Patient form */
+.form{
+	padding-left: 20px;
+}
+/* Patient form Box */
+.formBox{
+	position: absolute;
+	left: 100px;
+}
+

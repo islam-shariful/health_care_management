@@ -15,20 +15,55 @@
 	//Resistration
     if ($_SERVER["REQUEST_METHOD"] == "POST")
 	 {
-	    $pUserName = $_POST['userName'];
+	    $admitID = $_POST['userName'];
+	    $pUserName = $admitID;
 
-        $sql = " SELECT * FROM `patient` WHERE pUserName = '$pUserName' ;";
+        $sql = " SELECT * FROM `admit` WHERE admitID = '$admitID' ;";
+        $sql2 = "SELECT `pName`, `pUserName`, `pPassword`, `pAge`, `pAddress`, `pPhoneNo`, `pBirthday`, `pGender` FROM `patient` WHERE `pUserName`='$pUserName' ";
+        $sql3 = "SELECT `admitID`, `billAmount` FROM `bill` WHERE `admitID` = '@sharif' ;";
+
         $result = $conn->query($sql);
+        $result2 = $conn->query($sql2);
+        $result3 = $conn->query($sql3);
 
 		if ($result->num_rows > 0) {
-		    // output data of each row
-		    while($row = $result->fetch_assoc()) {
-		        echo "Name: " . $row["pName"]. "<br>"."User Name: " . $row["pUserName"]. "<br>"."Age: " . $row["pAge"]. "<br>"."Address: " . $row["pAddress"]. "<br>"."Phone No: " . $row["pPhoneNo"]. "<br>"."Birthday: " . $row["pBirthday"]. "<br>"."Gender: " . $row["pGender"]. "<br>". "<br>";
-		    }
-		} else {
-			//echo "Error: " . $sql . "<br>" . $conn->error;
-		    echo "Invalid User Name";
-		}
+		    
+		    /*----------------------------------------------------------*/
+		    if ($result2->num_rows > 0) 
+		    {
+			    /*----------------------------------------------------------*/
+			    if ($result2->num_rows > 0) {
+			    // output data of each row
+				    while($row = $result2->fetch_assoc()) 
+				    {
+				    	echo "<strong>"."Personal Information : "."</strong>"."<br>"."<strong>"."Name: " ."</strong>" .$row["pName"]. "<br>"."<strong>"."Address: " ."</strong>". $row["pAddress"]."<br>"."<strong>"."Phone No: " ."</strong>". $row["pPhoneNo"]. "<br>"."<strong>"."Birthday: " ."</strong>". $row["pBirthday"]."<br>"."<strong>"."Gender: " ."</strong>". $row["pGender"]. "<br>". "<br>";
+			   		 }
+			    	// output data of each row
+				    while($row = $result->fetch_assoc()) 
+				    {
+				        echo "<strong>"."Admission Information : "."</strong>"."<br>"."<strong>"."User Name : " ."</strong>". $row["pUserName"]. "<br>"."<strong>"."Catagory : " ."</strong>". $row["catagory"]. "<br>"."<strong>"."Rooms : " ."</strong>". $row["room"]. "<br>"."<strong>"."Admitted Date : " ."</strong>". $row["date"]."<br>";
+				    }
+			    
+			    	// output data of each row
+				    while($row = $result3->fetch_assoc()) 
+				    {
+				        echo "<strong>"."Bill : "."</strong>"."<strong>".$row["billAmount"]. "<br>"."<br>";
+				    }
+
+			        
+				}
+
+				/*---------------------------------------------------------------------*/
+			} 
+
+
+
+		} 
+			else 
+			{
+				//echo "Error: " . $sql . "<br>" . $conn->error;
+			    echo "Invalid User Name";
+			}
     }
 
     $conn->close();
@@ -48,6 +83,10 @@
 		<!-- Add Patient Icon -->
 		<div>
 			<a href="patientManagement.php"><img class="api" src="images/adddoctoricon.png" alt="Add Patient Icon"></a>
+		</div>
+		<!-- Admit Patient Icon -->
+		<div>
+			<a href="admitPatient.php"><img class="admitPatientIcon" src="images/admiticon.jpg" alt="Add Patient Icon"></a>
 		</div>
 		<!-- Delete patient Icon -->
 		<div>

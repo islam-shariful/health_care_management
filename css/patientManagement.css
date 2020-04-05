@@ -16,6 +16,7 @@ body{
   top: 585px;
 }
 
+
 /* Patient Registration */
 .register{
 	/* text-align: justify; */
@@ -42,12 +43,20 @@ body{
 	left: 50px;
 	top: 30px;
 }
+/* Admit Patient Icon */
+.admitPatientIcon {
+	width:30px;
+	height: 30px;
+	position: absolute;
+	left: 150px;
+	top: 30px;
+}
 /* Delete Patient Icon */
 .dpi {
 	width:30px;
 	height: 35px;
 	position: absolute;
-	left: 150px;
+	left: 250px;
 	top: 30px;
 }
 /* Update Patient Icon */
@@ -55,7 +64,7 @@ body{
 	width:32px;
 	height: 32px;
 	position: absolute;
-	left: 250px;
+	left: 350px;
 	top: 30px;
 }
 /* View Patient Icon */
@@ -63,7 +72,7 @@ body{
 	width:45px;
 	height: 45px;
 	position: absolute;
-	left: 350px;
+	left: 450px;
 	top: 25px;
 }
 /* Search Patient Icon */
@@ -71,6 +80,6 @@ body{
 	width:45px;
 	height: 45px;
 	position: absolute;
-	left: 450px;
+	left: 550px;
 	top: 25px;
 }

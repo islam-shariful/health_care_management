@@ -32,7 +32,7 @@
 		if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-		        echo "Name:: " . $row["pName"]. "<br>". "<br>"."User Name:: " . $row["pUserName"]. "<br>". "<br>"."Password:: " . $row["pPassword"]. "<br>". "<br>"."Age:: " . $row["pAge"]. "<br>". "<br>"."Address:: " . $row["pAddress"]. "<br>". "<br>"."Phone No:: " . $row["pPhoneNo"]. "<br>". "<br>"."Birthday:: " . $row["pBirthday"]. "<br>". "<br>"."Gender:: " . $row["pGender"]. "<br>". "<br>";
+		        echo "<strong>"."Personal Information : "."</strong>"."<br>"."<strong>"."Name: " ."</strong>" .$row["pName"]. "<br>"."<strong>"."Address: " ."</strong>". $row["pAddress"]."<br>"."<strong>"."Phone No: " ."</strong>". $row["pPhoneNo"]. "<br>"."<strong>"."Birthday: " ."</strong>". $row["pBirthday"]."<br>"."<strong>"."Gender: " ."</strong>". $row["pGender"]. "<br>". "<br>";
 		    }
 		} else {
 		    echo "Invalid UserName";

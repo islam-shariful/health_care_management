@@ -51,6 +51,10 @@
 		<div>
 			<a href="patientManagement.php"><img class="api" src="images/adddoctoricon.png" alt="Add Patient Icon"></a>
 		</div>
+		<!-- Admit Patient Icon -->
+		<div>
+			<a href="admitPatient.php"><img class="admitPatientIcon" src="images/admiticon.jpg" alt="Add Patient Icon"></a>
+		</div>
 		<!-- Delete Patient Icon -->
 		<div>
 			<a href="patientDelete.php"><img class="dpi" src="images/deletedoctoricon.png" alt="Delete Patient Icon"></a>

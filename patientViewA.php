@@ -13,18 +13,16 @@
 	    die("Connection failed: " . $conn->connect_error);
 	}
 	//Resistration
-    $sql = " SELECT * FROM `patient` WHERE 1 ";
+    $sql = " SELECT * FROM `admit` WHERE 1 ";
 
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-		        echo "Name: " . $row["pName"]. "<br>"."User Name: " . $row["pUserName"]. "<br>"."Age: " . $row["pAge"]. "<br>"."Address: " . $row["pAddress"]. "<br>"."Phone No: " . $row["pPhoneNo"]. "<br>"."Birthday: " . $row["pBirthday"]. "<br>"."Gender: " . $row["pGender"]. "<br>". "<br>";
+		        echo "<strong>"."User Name : " ."</strong>". $row["pUserName"]. "<br>"."<strong>"."Catagory : " ."</strong>". $row["catagory"]. "<br>"."<strong>"."Rooms : " ."</strong>". $row["room"]. "<br>"."<strong>"."Admitted Date : " ."</strong>". $row["date"]."<br>"."<br>";
 		    }
-		} else {
-		    echo "Invalid";
-		}
+		} else {}
 
     $conn->close();
     
@@ -43,6 +41,10 @@
 		<!-- Add Patient Icon -->
 		<div>
 			<a href="patientManagement.php"><img class="api" src="images/adddoctoricon.png" alt="Add Patient Icon"></a>
+		</div>
+		<!-- Admit Patient Icon -->
+		<div>
+			<a href="admitPatient.php"><img class="admitPatientIcon" src="images/admiticon.jpg" alt="Add Patient Icon"></a>
 		</div>
 		<!-- Delete Patient Icon -->
 		<div>

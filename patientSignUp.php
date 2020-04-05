@@ -70,7 +70,7 @@
 			  <input class="formBox" type="text" id="address" name="address" placeholder=" Enter Address"><br><br>
 			  <!-- Phone -->
 			  <label for="phoneNo">Phone No:</label>
-			  <input class="formBox" type="text" id="phoneNo" name="phoneNo" placeholder=" Enter Phone No."><br><br>
+			  <input class="formBox" type="text" id="phoneNo" name="phoneNo" placeholder=" Enter Unique Phone No."><br><br>
 			  <!-- Birthday -->
 			  <label for="birthday">Birthday:</label>
  			  <input class="formBox" type="date" id="birthday" name="birthday"><br><br>

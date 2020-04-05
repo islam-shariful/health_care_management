@@ -51,6 +51,10 @@
 		<div>
 			<a href="patientManagement.php"><img class="api" src="images/adddoctoricon.png" alt="Add Patient Icon"></a>
 		</div>
+		<!-- Admit Patient Icon -->
+		<div>
+			<a href="admitPatient.php"><img class="admitPatientIcon" src="images/admiticon.jpg" alt="Add Patient Icon"></a>
+		</div>
 		<!-- Delete Patient Icon -->
 		<div>
 			<a href="patientDelete.php"><img class="dpi" src="images/deletedoctoricon.png" alt="Delete Patient Icon"></a>
@@ -86,17 +90,21 @@
 			  <input class="formBox" type="text" id="address" name="address" placeholder=" Enter Address"><br><br>
 			  <!-- Phone -->
 			  <label for="phoneNo">Phone No:</label>
-			  <input class="formBox" type="text" id="phoneNo" name="phoneNo" placeholder=" Enter Phone No."><br><br>
+			  <input class="formBox" type="text" id="phoneNo" name="phoneNo" placeholder=" Enter Unique Phone No."><br><br>
 			  <!-- Birthday -->
 			  <label for="birthday">Birthday:</label>
  			  <input class="formBox" type="date" id="birthday" name="birthday"><br><br>
  			  <!-- Gender -->
- 			  <input type="radio" id="male" name="gender" value="male">
-			  <label for="male">Male</label><br>
-			  <input type="radio" id="female" name="gender" value="female">
-			  <label for="female">Female</label><br>
-			  <input type="radio" id="other" name="gender" value="other">
-			  <label for="other">Other</label><br><br>
+ 			  Gender : </br>
+ 			  <div>
+	 			  <input type="radio" id="male" name="gender" value="male">
+				  <label for="male">Male</label><br>
+				  <input type="radio" id="female" name="gender" value="female">
+				  <label for="female">Female</label><br>
+				  <input type="radio" id="other" name="gender" value="other">
+				  <label for="other">Other</label><br><br>
+				</div></br>
+
 			
 			 <input style="background-color:white;" type="submit" value="RESISTRATION" name="resistration">
 			</form>

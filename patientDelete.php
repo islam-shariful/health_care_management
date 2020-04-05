@@ -15,12 +15,15 @@
 	//Resistration
     if ($_SERVER["REQUEST_METHOD"] == "POST")
 	 {
-	    $pUserName = $_POST['userName'];
-
-        $sql = " DELETE FROM `patient` WHERE pUserName='$pUserName' ;";
+	    $admitID = $_POST['admitID'];
+   
+        $sql = " DELETE FROM `bill` WHERE admitID='$admitID' ;";
+        $sql2 = " DELETE FROM `admit` WHERE admitID='$admitID' ;";
 
 		if ($conn->query($sql) === TRUE) {
-		    echo "Record deleted successfully";
+			if ($conn->query($sql2) === TRUE) {
+				echo "Patient Released successfully";
+			}
 		} else {
 		    //echo "Error: " . $sql . "<br>" . $conn->error;
 		    //echo "Invalid Info";
@@ -35,7 +38,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Remove Patient | BANGABANDHU HEALTH CARE</title>
+	<title>Release Patient | BANGABANDHU HEALTH CARE</title>
 	<link rel="stylesheet" href="css/patientDelete.css">
 	<link rel="shortcut icon" href="images/adminicon5.JPG">
 </head>
@@ -44,6 +47,10 @@
 		<!-- Add Patient Icon -->
 		<div>
 			<a href="patientManagement.php"><img class="api" src="images/adddoctoricon.png" alt="Add Patient Icon"></a>
+		</div>
+		<!-- Admit Patient Icon -->
+		<div>
+			<a href="admitPatient.php"><img class="admitPatientIcon" src="images/admiticon.jpg" alt="Add Patient Icon"></a>
 		</div>
 		<!-- Delete Patient Icon -->
 		<div>
@@ -65,14 +72,14 @@
 
 		<div class="register">
 			<!-- Greeting -->
-			<h2>REMOVE PATIENT</h2><br>
+			<h2>RELEASE PATIENT</h2><br>
 			<!-- Form -->
 			<form class="form" action="" method="post">
-			  <!-- User Name -->
-			  <label for="userName">User Name:</label>
-			  <input class="formBox" type="text" id="userName" name="userName" placeholder=" Enter User Name"><br><br>
+			  <!-- Admit Name -->
+			  <label for="admitID">User Name:</label>
+			  <input class="formBox" type="text" id="admitID" name="admitID" placeholder=" Enter Admit ID"><br><br>
 			
-			 <input style="background-color:white;" type="submit" value="DELETE" name="resistration">
+			 <input style="background-color:white;" type="submit" value="RELEASE" name="resistration">
 			</form>
 		</div>
 

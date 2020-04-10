@@ -15,7 +15,16 @@ body{
   left: 1310px;
   top: 585px;
 }
-
+.error {
+	color: #FF0000;
+	padding-left: 100px;
+}
+/*
+.echoError {
+	color: #FF0000;
+	position: absolute;
+	padding-left: 200px;
+} */
 
 /* Patient Registration */
 .register{

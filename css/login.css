@@ -1,25 +1,45 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40f59a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #bce3e1;
+}
+
+
+
 body {
   
   /*background-image: url("images/hospital.jpg");*/
   background-color:#45f7bc;
-  border: 5px solid #f1f1f1;
-  padding-left: 500px;
-  padding-top: 200px;
-  padding-bottom: 405px;
-}
-a {
-  color: black;
 }
 
+
 .la {
-  background-color: #45f7bc;
   color: black;
   width: 205px;
   font-size: 35px;
 
   position: absolute;
   left: 550px;
-  top: 60px;
+  top: 100px;
   
 }
 
@@ -62,6 +82,7 @@ a {
 
 
 /* Back */
+/*
 .back{
   width: 30px;
   height: 30px;
@@ -70,7 +91,9 @@ a {
   left: 1310px;
   top: 585px;
 }
+*/
 /* Home */
+/*
 .home{
   width: 30px;
   height: 30px;
@@ -78,26 +101,26 @@ a {
   position: absolute;
   left: 20px;
   top: 585px;
-}
+}*/
 
 /*images*/
 
 /* Doctor Image */
 .ai{
   position: absolute;
-  top:300px;
+  top:340px;
   left: 310px;
 }
 /* Doctor Image */
 .di{
   position: absolute;
-  top:300px;
+  top:340px;
   left: 570px;
 }
 /* Patient Image */
 .pi{
   position: absolute;
-  top:300px;
+  top:340px;
   left: 820px;
 }
 

@@ -5,6 +5,27 @@ body{
 	padding-top: 200px;
 	padding-bottom: 405px;
 }
+
+/* -------------------------- */
+
+.iconToHover .hoverText {
+  visibility: hidden;
+  width: 150px;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  left: 50%;
+  top:5%;
+}
+
+.iconToHover:hover .hoverText {
+  visibility: visible;
+}
+
+/* --------------------------- */
 /* Back */
 .back{
   width: 30px;

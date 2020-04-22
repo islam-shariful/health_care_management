@@ -130,28 +130,34 @@
 <body>
 	<!-- ------------------------------------------------------------------------------------- -->
 		<!-- Add Patient Icon -->
-		<div>
+		<div class="iconToHover">
 			<a href="patientManagement.php"><img class="api" src="images/adddoctoricon.png" alt="Add Patient Icon"></a>
+			<span class="hoverText">REGISTER PATIENT</span>
 		</div>
 		<!-- Admit Patient Icon -->
-		<div>
+		<div class="iconToHover">
 			<a href="admitPatient.php"><img class="admitPatientIcon" src="images/admiticon.jpg" alt="Add Patient Icon"></a>
+			<span class="hoverText">ADMIT PATIENT</span>
 		</div>
 		<!-- Delete Patient Icon -->
-		<div>
+		<div class="iconToHover">
 			<a href="patientDelete.php"><img class="dpi" src="images/deletedoctoricon.png" alt="Delete Patient Icon"></a>
+			<span class="hoverText">RELEASE PATIENT</span>
 		</div>
 		<!-- Update Patient Icon -->
-		<div>
+		<div class="iconToHover">
 			<a href="patientModify.php"><img class="upi" src="images/updatedoctoricon.png" alt="Update Patient Icon"></a>
+			<span class="hoverText">MODIFY PATIENT</span>
 		</div>
 		<!-- View Patient Icon -->
-		<div>
+		<div class="iconToHover">
 			<a href="patientViewA.php"><img class="vpi" src="images/viewicon.png" alt="View Patient Icon"></a>
+			<span class="hoverText">VIEW PATIENT</span>
 		</div>
 		<!-- Search Patient Icon -->
-		<div>
+		<div class="iconToHover">
 			<a href="patientFind.php"><img class="spi" src="images/searchicon.png" alt="Search Patient Icon"></a>
+			<span class="hoverText">SEARCH PATIENT</span>
 		</div>
 		<!-- ---------------------------------------------------------------------------- -->
 	<div class="register">

@@ -1,4 +1,10 @@
 <?php
+	session_start();
+	if(!isset($_SESSION['adminName']))
+	{
+		header("Location:adminLogin.php");
+	}
+	
 	$servername = "localhost";
 						$dbusername = "root";
 						$password = "";

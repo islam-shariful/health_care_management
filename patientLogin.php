@@ -27,6 +27,8 @@
 
         if ($count == 1) {
             header("Location:patientPanel.php"."?username=$username");
+            //set cookie
+            setcookie("loggedInUser",$username,time()+300);
         } else {
             header('Location:patientLogin.php');
         }

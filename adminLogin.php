@@ -1,5 +1,9 @@
 <?php
+	// Start the session
+	session_start();
+
 	
+
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
@@ -17,6 +21,9 @@
         if (isset($_POST['username']) && isset($_POST['password'])) {
             $username = $_POST['username'];
             $password = $_POST['password'];
+
+            // Set session variables
+			$_SESSION["adminName"] = $_POST['username'];
         }
 
         $sql = "SELECT * FROM adminlogin WHERE aUserName='$username' AND aPassword='$password'";

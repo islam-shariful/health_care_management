@@ -1,5 +1,11 @@
 <?php
 	$username = $_GET['username'];
+
+	//session_start();
+	if(!isset($_COOKIE['loggedInUser']))
+	{
+		header("Location:patientLogin.php");
+	}
 	
 ?>
 
